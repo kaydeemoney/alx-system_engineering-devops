@@ -1,2 +1,2 @@
 #!/bin/bash
-export PATH=$(echo $PATH | awk -F: '{for (i=1;i<=NF;i++) if ($i != "/action") printf("%s%s", (i==1?"":":"),$i)}'):/action
+export PATH=${PATH}:/action; export PATH=$PATH
