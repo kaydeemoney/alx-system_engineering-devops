@@ -1,0 +1,1 @@
+hello, this is my file on how to use bash for conditions and loops 
