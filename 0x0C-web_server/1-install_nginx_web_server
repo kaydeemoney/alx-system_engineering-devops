@@ -1,18 +1,6 @@
 #!/usr/bin/env bash
-# Script that install Nginx on the server web-01
-
-# Update the package and intall
-sudo apt-get update
-sudo apt-get -y install nginx
-
-# Start nginx
-sudo service nginx start 
-
-# Allow incoming traffic for the Nginx HTTP service
-sudo ufw allow 'Nginx HTTP'
-
-# Creating an index.html page
-echo "Hello World!" | sudo tee /var/www/html/index.html
-
-# Restart nginx
-sudo service nginx restart
+# Installs and configures a private server with nginx
+apt-get update && apt-get upgrade -y
+apt-get install nginx -y
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+service nginx restart
