@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Installs and configure HAproxy on the lb-01 server
+# using roundrobin algorithm
 
 STUDENT_ID="498113"
 WEB_01_IP="52.87.220.110"
